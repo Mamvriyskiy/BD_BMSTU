@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  db_auth:
+    container_name: db_container
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=Smena
+      - POSTGRES_USER=Misfio32
+    image: postgres:15.4-alpine
+    volumes:
+      - type: bind
+        source: /Users/ivanmamvriyskiy/Desktop/data
+        target: /mnt
+
