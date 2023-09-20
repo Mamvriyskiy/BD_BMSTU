@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" modified="2023-09-19T04:04:11.899Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15" etag="nO79JdgvpRerxVauHjt7" version="21.7.5" type="device">
+  <diagram name="Страница — 1" id="TKOI9McaKKPaNRtDPE1I">
+    <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;horizontal=1;endArrow=ERoneToMany;endFill=0;startArrow=ERzeroToOne;startFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-7" target="zBRQnSCEUeMpG0fmmqVv-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-7" value="Client" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="70" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-8" value="-client_id&lt;br&gt;-first_name&lt;br&gt;-last_surname&lt;br&gt;-phone_number&lt;br&gt;-date_of_birth&lt;br&gt;-sex&lt;br&gt;-passport" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-7" vertex="1">
+          <mxGeometry x="10" y="40" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmandOne;endFill=0;startArrow=ERoneToMany;startFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-9" target="zBRQnSCEUeMpG0fmmqVv-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERoneToMany;startFill=0;endArrow=ERmandOne;endFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-9" target="zBRQnSCEUeMpG0fmmqVv-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-9" value="BookingRoom" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="350" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-20" value="-booking_id&lt;br&gt;-room_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-9" vertex="1">
+          <mxGeometry x="9" y="40" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERmandOne;startFill=0;endArrow=ERoneToMany;endFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-12" target="zBRQnSCEUeMpG0fmmqVv-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-12" value="Room" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="70" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-10" value="-room_id&lt;br&gt;-room_number&lt;br&gt;-categorie&lt;br&gt;-price" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-12" vertex="1">
+          <mxGeometry x="10" y="40" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-18" value="Incident" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="340" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-19" value="-id&lt;br&gt;-comment&lt;br&gt;-status&lt;br&gt;-room_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-18" vertex="1">
+          <mxGeometry x="10" y="50" width="80" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=ERmandOne;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-20" target="zBRQnSCEUeMpG0fmmqVv-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-20" value="Booking" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="350" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-1" value="-booking_id&lt;br&gt;-client_id&lt;br&gt;-date_arrive&lt;br&gt;-date_departure&lt;br&gt;-count_room&lt;br&gt;-invoice_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-20" vertex="1">
+          <mxGeometry x="10" y="45" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-21" value="Services" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="620" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-2" value="-servies_id&lt;br&gt;-name_servies&lt;br&gt;-price&lt;br&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-21" vertex="1">
+          <mxGeometry x="10" y="35" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERoneToMany;endFill=0;startArrow=ERmandOne;startFill=0;" parent="1" source="zBRQnSCEUeMpG0fmmqVv-22" target="_Xk9B5CIhpi4dbj-jmCW-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zBRQnSCEUeMpG0fmmqVv-22" value="InvoiceForPayment" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="620" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-6" value="-invoice_id&lt;br&gt;-booking_id&lt;br&gt;-date_of_issue&lt;br&gt;-total_price" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="zBRQnSCEUeMpG0fmmqVv-22" vertex="1">
+          <mxGeometry x="10" y="40" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=ERmandOne;endFill=0;startArrow=ERoneToMany;startFill=0;" parent="1" source="_Xk9B5CIhpi4dbj-jmCW-14" target="zBRQnSCEUeMpG0fmmqVv-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-14" value="InvoiceServices" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="620" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="_Xk9B5CIhpi4dbj-jmCW-15" value="-invoice_id&lt;br&gt;-servies_id" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="_Xk9B5CIhpi4dbj-jmCW-14" vertex="1">
+          <mxGeometry x="10" y="35" width="80" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
